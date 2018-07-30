@@ -1,4 +1,5 @@
 # n-gram
+Obtained the top 30% n-grams based on frequency of their occurrences.
 
 ## Objective
 1. Obtain the frequency of occurences of all the unique 3-grams, 5-grams and 7-grams system call sequences in the Training data for both Attack data (across all categories of attack) and Normal data.
