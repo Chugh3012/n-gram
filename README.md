@@ -10,3 +10,12 @@ Host-based intrusion detection systems (HIDSs), especially anomaly-based, have r
 
 Once we obtain the Training and Test data sets for unique n-gram we implement a simple k nearest neighbour (kNN) to develop new host-based anomaly detection systems (HADSs).
 
+## Methodology
+#### To implement the above goals , the following methodology was followed: 
+1. For each Attack category we split the data set into two parts(Training and Test).
+2. All the training files for a particular class of attack are concatenated.
+3. Frequency of each unique n-gram term is calculated using the concept of hashing in linear time.
+4. Using the above obtained data the top 30% n-gram terms is obtained using "Blum's Algorithm."
+5. These 30% terms(comprises the features of the final training data set) are concatenated.
+6. With the help of dictionary interface which held the previous data the frequencies for each class of attack for all the features is obtained.
+7. Similar methodology is followed for Test data set.
